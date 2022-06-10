@@ -7,9 +7,9 @@ import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.core import callback
 from homeassistant.const import CONF_USERNAME, CONF_PASSWORD, CONF_ACCESS_TOKEN
-from python_chargepoint import ChargePoint
+from .python_chargepoint import ChargePoint
 
-from python_chargepoint.exceptions import (
+from .python_chargepoint.exceptions import (
     ChargePointLoginError,
     ChargePointCommunicationException,
 )

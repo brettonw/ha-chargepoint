@@ -19,15 +19,15 @@ from homeassistant.helpers.update_coordinator import (
     CoordinatorEntity,
 )
 
-from python_chargepoint import ChargePoint
-from python_chargepoint.session import ChargingSession
-from python_chargepoint.types import (
+from .python_chargepoint import ChargePoint
+from .python_chargepoint.session import ChargingSession
+from .python_chargepoint.types import (
     ChargePointAccount,
     UserChargingStatus,
     HomeChargerStatus,
     HomeChargerTechnicalInfo,
 )
-from python_chargepoint.exceptions import (
+from .python_chargepoint.exceptions import (
     ChargePointLoginError,
     ChargePointCommunicationException,
     ChargePointBaseException,
